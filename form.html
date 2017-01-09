@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Signup Form</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="form_styles.css">
+    </head>
+    <body>
+        <img src="images/logoWave.png" id="logo">
+        <main>
+            <form action="/signup/" method="post">
+                <h1>Sign up</h1>
+                <p><label for="email">Email</label></p>
+                <input type="email" name="email" placeholder="foo@bar.com" required>
+
+                <p><label for="password">Password</label></p>
+                <input type="password" name="psw" placeholder="1234passw0rd" required>
+
+                <p><button type="submit" id="submit"><b>Sign up</b></button></p>
+                <a href="/forgot-password/new" id="forgot-password">Forgot password?</a>
+            </form>
+        </main>
+        <div id="login">
+            Already have an account? <a href="/login">Log in</a>
+        </div>
+    </body>
+</html>
